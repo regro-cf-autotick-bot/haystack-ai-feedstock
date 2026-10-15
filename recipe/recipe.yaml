@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: haystack-ai
-  version: 3.3.0
+  version: 3.4.0
 
 package:
   name: ${{ name|lower }}
@@ -10,7 +10,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/haystack_ai-${{ version }}.tar.gz
-  sha256: c4376ea13a95fe1e1df3efe383ad7b6af60ae0c971072eb1be53e3b0ccc9d96f
+  sha256: d09b30cc8f2f947946825342a859a82554f41b27f41c2c2020ff96adfae87028
 
 build:
   number: 0
@@ -39,7 +39,6 @@ requirements:
     - pyyaml
     - tenacity !=8.4.0
     - tqdm
-    - typing_extensions >=4.7
     - markupsafe
     - httpx
     - anyio >=4.14.2
